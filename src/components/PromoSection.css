@@ -1,0 +1,53 @@
+.promo-section {
+  background: url("/src/assets/img/promo.jpg") center/cover no-repeat;
+  min-height: 400px;
+  position: relative;
+  width: 100%;
+}
+
+.promo-section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4); /* subtle dark overlay */
+}
+
+.promo-overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.promo-content {
+  max-width: 600px;
+  padding: 40px;
+  color: #fff;
+  text-align: left;
+}
+
+.promo-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.promo-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-blue {
+  background-color: #070d61;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
